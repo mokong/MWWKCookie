@@ -1,0 +1,6 @@
+framework module MWWKCookie {
+  umbrella header "MWWKCookie-umbrella.h"
+
+  export *
+  module * { export * }
+}

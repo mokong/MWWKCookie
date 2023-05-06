@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MWWKCookie'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of MWWKCookie.'
+  s.version          = '0.0.1'
+  s.summary          = 'A WKWebview cookie handler'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,23 +18,24 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  A WKWebview cookie handler, Swift version of GGWkCookie
                        DESC
 
-  s.homepage         = 'https://github.com/morgan/MWWKCookie'
+  s.homepage         = 'https://github.com/mokong/MWWKCookie'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'morgan' => 'a525325614@163.com' }
-  s.source           = { :git => 'https://github.com/morgan/MWWKCookie.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/mokong/MWWKCookie.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
-
-  s.source_files = 'MWWKCookie/Classes/**/*'
+  s.swift_version = "5.0"
+  s.preserve_paths = "MWWKCookie/*"
+  s.source_files = 'MWWKCookie/**/*'
   
-  # s.resource_bundles = {
-  #   'MWWKCookie' => ['MWWKCookie/Assets/*.png']
-  # }
+  s.resource_bundles = {
+    'MWWKCookie' => ['MWWKCookie/Resources/*.{json,xib,jpg,png,webp,db,plist,bundle,gif,sqlite,7z,zip,strings,xcassets,js,html,dat,data,css}']
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

@@ -1,4 +1,7 @@
 use_frameworks!
+
+platform :ios, '10.0'
+
 target 'MWWKCookie_Tests' do
   pod 'MWWKCookie', :path => '../'
   
