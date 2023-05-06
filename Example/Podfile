@@ -1,0 +1,6 @@
+use_frameworks!
+target 'MWWKCookie_Tests' do
+  pod 'MWWKCookie', :path => '../'
+  
+  
+end
